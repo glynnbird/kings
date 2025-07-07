@@ -21,8 +21,8 @@ export default defineNuxtConfig({
       periodicSyncForUpdates: 3600,
     },
     manifest: {
-        "short_name": "TV",
-        "name": "TV Helper",
+        "short_name": "Kings",
+        "name": "Kings",
         "icons": [
           {
             "src": "/crown_192.png",
@@ -41,7 +41,7 @@ export default defineNuxtConfig({
         "display": "standalone",
         "scope": "/",
         "theme_color": "#7B1FA2",
-        "description": "TV programme planner"
+        "description": "Kings and Queens of England"
     },
     workbox: {
       globPatterns: ['**/*.{js,css,html,ico,png,svg}']
