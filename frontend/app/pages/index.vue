@@ -7,7 +7,7 @@
   const search = ref('')
 
   const filteredKings = computed(() => {
-    if (search.value.trim().length === 0) {
+    if (search.value === null || search.value.trim().length === 0) {
       return kings.value
     }
 
@@ -43,7 +43,7 @@
     <v-btn color="primary" @click="$pwa.updateServiceWorker()">Reload</v-btn>
   </v-alert>
 
-  <v-text-field clearable :label="'Search (' + kings.length + ')'" v-model="search"></v-text-field>
+  <v-text-field clearable :label="'Search (' + filteredKings.length + ')'" v-model="search"></v-text-field>
   <v-card v-for="king in filteredKings">
     <v-img
       :src="king.img"
