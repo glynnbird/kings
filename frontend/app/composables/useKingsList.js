@@ -257,6 +257,16 @@ const reference = [
 export default function () {
 
   const kings = useState('kings', () => { return reference })
+  const firstTime = useState('firstTime', () => { return true })
+
+  // add before and after to kings list
+  if (firstTime.value) {
+    for(let i = 0; i < kings.value.length; i++) {
+      kings.value[i].before = i > 0 ? kings.value[i - 1].name : null
+      kings.value[i].after = i < kings.value.length - 1 ?  kings.value[i + 1].name : null
+    }
+    firstTime.value = false
+  }
 
   return { kings }
 }
