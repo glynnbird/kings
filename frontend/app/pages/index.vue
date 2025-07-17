@@ -1,40 +1,7 @@
 <script setup>
   // composables
   const { $pwa } = useNuxtApp()
-  const { kings } = useKingsList()
-
-  // page refs
-  const search = ref('')
-
-  const filteredKings = computed(() => {
-    if (search.value === null || search.value.trim().length === 0) {
-      return kings.value
-    }
-
-    const match = search.value.match(/([0-9][0-9][0-9][0-9])/)
-
-    // search by year
-    if (match) {
-      const year = parseInt(match[0])
-      return kings.value.filter((k) => {
-        if (k.from <= year && (k.to === null || k.to >= year)) {
-          return true
-        }
-      })
-    }
-
-    // don't filter if it's just numbers
-    if (search.value.replace(/[0-9]/g,'').trim().length === 0) {
-      return kings.value
-    }
-
-    // search by string
-    const lc = search.value.toLowerCase()
-    return kings.value.filter((k) => {
-      return k.name.toLowerCase().includes(lc)
-    })
-  })
-
+  const { kings, filteredKings, search } = useKingsList()
 </script>
 <style>
   .v-card {
