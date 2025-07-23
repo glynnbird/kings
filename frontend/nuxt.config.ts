@@ -70,6 +70,5 @@ export default defineNuxtConfig({
     define: {
       'process.env.DEBUG': false,
     }
-  },
-  nitro: { cloudflare: { deployConfig: true } }
+  }
 })
