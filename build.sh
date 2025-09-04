@@ -1,15 +1,19 @@
 #!/bin/bash
 
-# build frontend
+# work out which combination of platform/arch we're running on
 echo "Operating system"
-echo "console.log(process.platform)" | node
+PLATFORM=`echo "console.log(process.platform)" | node`
+echo $PLATFORM
 echo "Arch"
-echo "console.log(process.arch)" | node
+ARCH=`echo "console.log(process.arch)" | node`
+echo $ARCH
+
+# build frontend
 echo "Building frontend 🏢"
 cd frontend
 #rm package-lock.json
-npm install
+npm install --cpu $ARCH --os $PLATFORM
 npm run generate
-mv dist ../
+#mv dist ../
 cd ..
 
