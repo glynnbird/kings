@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # build frontend
+echo "Operating system"
+echo $OSTYPE
 echo "Building frontend 🏢"
 cd frontend
 rm package-lock.json
