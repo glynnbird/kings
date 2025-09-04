@@ -7,7 +7,7 @@ echo "Arch"
 echo "console.log(process.arch)" | node
 echo "Building frontend 🏢"
 cd frontend
-rm package-lock.json
+#rm package-lock.json
 npm install
 npm run generate
 mv dist ../
