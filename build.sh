@@ -2,9 +2,9 @@
 
 # build frontend
 echo "Operating system"
-echo $OSTYPE
+echo "console.log(process.platform)" | node
 echo "Arch"
-uname -p
+echo "console.log(process.arch)" | node
 echo "Building frontend 🏢"
 cd frontend
 rm package-lock.json
