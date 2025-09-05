@@ -11,8 +11,8 @@ echo $ARCH
 # build frontend
 echo "Building frontend 🏢"
 cd frontend
-rm package-lock.json
-npm install
+#rm package-lock.json
+npm ci
 npm run generate
 mv dist ../
 cd ..
