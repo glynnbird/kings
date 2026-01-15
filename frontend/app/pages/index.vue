@@ -25,6 +25,7 @@
       <v-card-title class="text-white" v-text="king.name"></v-card-title>
     </v-img>
     <v-card-text>
+      <v-img cover v-if="king.x" :src="king.x"></v-img>
       <v-row>
         <v-col>
           {{ king.from }} 

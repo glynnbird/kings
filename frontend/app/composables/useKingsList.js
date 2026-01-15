@@ -2,24 +2,28 @@ const reference = [
   {
     name: 'William I',
     img: '/img/1.JPG',
+    x: '/img/1X.JPG',
     from: 1066,
     to: 1087
   },
   {
     name: 'William II',
     img: '/img/2.JPG',
+    x: '/img/2X.JPG',
     from: 1087,
     to: 1100
   },
   {
     name: 'Henry I',
     img: '/img/3.JPG',
+    x: '/img/3X.JPG',
     from: 1100,
     to: 1135
   },
   {
     name: 'Stephen',
     img: '/img/4.JPG',
+    x: '/img/4X.JPG',
     from: 1135,
     to: 1154
   },
