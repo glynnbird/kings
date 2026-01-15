@@ -30,90 +30,105 @@ const reference = [
   {
     name: 'Henry II',
     img: '/img/5.JPG',
+    x: '/img/5X.JPG',
     from: 1154,
     to: 1189
   },
   {
     name: 'Richard I',
     img: '/img/6.JPG',
+    x: '/img/6X.JPG',
     from: 1189,
     to: 1199
   },
   {
     name: 'John',
     img: '/img/7.JPG',
+    x: '/img/7X.JPG',
     from: 1199,
     to: 1216
   },
   {
     name: 'Henry III',
     img: '/img/8.JPG',
+    x: '/img/8X.JPG',
     from: 1216,
     to: 1272
   },
   {
     name: 'Edward I',
     img: '/img/9.JPG',
+    x: '/img/9X.JPG',
     from: 1272,
     to: 1307
   },
   {
     name: 'Edward II',
     img: '/img/10.JPG',
+    x: '/img/10X.JPG',
     from: 1307,
     to: 1327
   },
   {
     name: 'Edward III',
     img: '/img/11.JPG',
+    x: '/img/11X.JPG',
     from: 1327,
     to: 1377
   },
   {
     name: 'Richard II',
     img: '/img/12.JPG',
+    x: '/img/12X.JPG',
     from: 1377,
     to: 1399,
   },
   {
     name: 'Henry IV',
     img: '/img/13.JPG',
+    x: '/img/13X.JPG',
     from: 1399,
     to: 1413,
   },
   {
     name: 'Henry V',
     img: '/img/14.JPG',
+    x: '/img/14X.JPG',
     from: 1413,
     to: 1422,
   },
   {
     name: 'Henry VI',
     img: '/img/15.JPG',
+    x: '/img/15X.JPG',
     from: 1422,
     to: 1461,
   },
   {
     name: 'Edward IV',
     img: '/img/16.JPG',
+    x: '/img/16X.JPG',
     from: 1461,
     to: 1483,
   },
   {
     name: 'Edward V',
     img: '/img/17.JPG',
+    x: '/img/17X.JPG',
     from: 1483,
     to: 1483,
   },
   {
     name: 'Richard III',
     img: '/img/18.JPG',
+    x: '/img/18X.JPG',
     from: 1483,
     to: 1485,
   },
   {
     name: 'Henry VII',
     img: '/img/19.JPG',
+    x: '/img/19X.JPG',
     from: 1485,
     to: 1509,
   },
