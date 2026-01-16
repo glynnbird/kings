@@ -36,8 +36,10 @@
         </v-col>
       </v-row>
       <v-row v-if="filteredKings.length < kings.length">
-        <v-col>⬅️ {{  king.before }}</v-col>
-        <v-col>{{ king.after }} ➡️</v-col>
+        <v-col><v-btn variant="plain" @click="search=king.before">⬅️</v-btn></v-col>
+        <v-col>{{  king.before }}</v-col>
+        <v-col>{{ king.after }} </v-col>
+        <v-col><v-btn  variant="plain"@click="search=king.after">➡️</v-btn></v-col>
       </v-row>
     </v-card-text>
   </v-card>
