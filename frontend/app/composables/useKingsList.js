@@ -135,12 +135,15 @@ const reference = [
   {
     name: 'Henry VIII',
     img: '/img/20.JPG',
+    x: '/img/20X.JPG',
+    y: '/img/20Y.JPG',
     from: 1509,
     to: 1547,
   },
   {
     name: 'Edward VI',
     img: '/img/21.JPG',
+    x: '/img/21X.JPG',
     from: 1547,
     to: 1553,
   },
@@ -153,24 +156,31 @@ const reference = [
   {
     name: 'Mary I',
     img: '/img/23.JPG',
+    x: '/img/23X.JPG',
     from: 1553,
     to: 1558,
   },
   {
     name: 'Elizabeth I',
     img: '/img/24.JPG',
+    x: '/img/24X.JPG',
+    y: '/img/24X.JPG',
     from: 1558,
     to: 1603,
   },
   {
     name: 'James I',
     img: '/img/25.JPG',
+    x: '/img/25X.JPG',
     from: 1603,
     to: 1625,
   },
   {
     name: 'Charles I',
     img: '/img/26.JPG',
+    x: '/img/26X.JPG',
+    y: '/img/26Y.JPG',
+    z: '/img/26Z.JPG',
     from: 1625,
     to: 1649
   },

@@ -26,6 +26,8 @@
     </v-img>
     <v-card-text>
       <v-img cover v-if="king.x" :src="king.x"></v-img>
+      <v-img cover v-if="king.y" :src="king.y"></v-img>
+      <v-img cover v-if="king.z" :src="king.z"></v-img>
       <v-row>
         <v-col>
           {{ king.from }} 
