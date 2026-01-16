@@ -55,7 +55,7 @@ export default defineNuxtConfig({
       "description": "Kings and Queens of England"
     },
     workbox: {
-      globPatterns: ['**/*.{js,css,html,ico,png,svg}']
+      globPatterns: ['**/*.{js,css,html,ico,png,svg,JPG}']
     },
     devOptions: {
       enabled: false,
