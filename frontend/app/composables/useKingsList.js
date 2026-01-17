@@ -193,7 +193,7 @@ const reference = [
   {
     name: 'James II',
     img: '/img/28.JPG',
-    from: 1665,
+    from: 1685,
     to: 1688
   },
   {
