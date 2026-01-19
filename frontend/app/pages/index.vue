@@ -2,7 +2,7 @@
   // composables
   const { $pwa } = useNuxtApp()
   const { kings, filteredKings, search } = useKingsList()
-  const showBio = ref(false)
+  const { showBio } = useShowBio()
 </script>
 <style>
   .v-card {
@@ -15,15 +15,6 @@
     <h4> New content available, click on reload button to update. </h4>
     <v-btn color="primary" @click="$pwa.updateServiceWorker()">Reload</v-btn>
   </v-alert>
-
-  <v-row>
-    <v-col>
-      <v-text-field clearable :label="'Search (' + filteredKings.length + ')'" v-model="search"></v-text-field>
-    </v-col>
-    <v-col>
-      <v-switch label="Bio" v-model="showBio"></v-switch>
-    </v-col>
-  </v-row>
 
    <v-card v-for="king in filteredKings">
     <v-img

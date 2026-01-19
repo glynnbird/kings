@@ -308,7 +308,7 @@ export default function () {
   const firstTime = useState('firstTime', () => { return true })
 
   // the search string entered by the user
-  const search = ref('')
+  const search = useState('search', () => { return '' })
 
   // a computed filtered list of kings, only those matching the search
   const filteredKings = computed(() => {
