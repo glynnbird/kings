@@ -334,9 +334,14 @@ export default function () {
     }
 
     // search by string
-    const lc = search.value.toLowerCase()
+    const lc = search.value.toLowerCase().trim()
+    const hasSpaces = lc.includes(' ')
     return kings.value.filter((k) => {
-      return k.name.toLowerCase().includes(lc)
+      if (hasSpaces) {
+        return k.name.toLowerCase() === lc
+      } else {
+        return k.name.toLowerCase().includes(lc)
+      }
     })
   })
 
