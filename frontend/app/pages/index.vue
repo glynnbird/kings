@@ -37,6 +37,7 @@
       <v-img cover v-if="king.x && showBio" :src="king.x"></v-img>
       <v-img cover v-if="king.y && showBio" :src="king.y"></v-img>
       <v-img cover v-if="king.z && showBio" :src="king.z"></v-img>
+      <v-img cover v-if="king.zz && showBio" :src="king.zz"></v-img>
       <v-row>
         <v-col>
           {{ king.from }} 

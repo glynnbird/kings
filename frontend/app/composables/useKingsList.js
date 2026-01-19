@@ -187,60 +187,79 @@ const reference = [
   {
     name: 'Charles II',
     img: '/img/27.JPG',
+    x: '/img/27X.JPG',
+    y: '/img/27Y.JPG',
     from: 1660,
     to: 1685
   },
   {
     name: 'James II',
     img: '/img/28.JPG',
+    x: '/img/28X.JPG',
+    y: '/img/28Y.JPG',
     from: 1685,
     to: 1688
   },
   {
     name: 'William III & Mary II',
     img: '/img/29.JPG',
+    x: '/img/29X.JPG',
     from: 1689,
     to: 1702
   },
   {
     name: 'Anne',
     img: '/img/30.JPG',
+    x: '/img/30X.JPG',
     from: 1702,
     to: 1714
   },
   {
     name: 'George I',
     img: '/img/31.JPG',
+    x: '/img/31X.JPG',
     from: 1714,
     to: 1727
   },
   {
     name: 'George II',
     img: '/img/32.JPG',
+    x: '/img/32X.JPG',
+    y: '/img/32Y.JPG',
     from: 1727,
     to: 1760
   },
   {
     name: 'George III',
     img: '/img/33.JPG',
+    x: '/img/33X.JPG',
+    y: '/img/33Y.JPG',
+    z: '/img/33Z.JPG',
+    zz: '/img/33Z.JPG',
     from: 1760,
     to: 1820
   },
   {
     name: 'George IV',
     img: '/img/34.JPG',
+    x: '/img/34X.JPG',
     from: 1820,
     to: 1830
   },
   {
     name: 'William IV',
     img: '/img/35.JPG',
+    x: '/img/35X.JPG',
+    y: '/img/35Y.JPG',
     from: 1830,
     to: 1837
   },
   {
     name: 'Victoria',
     img: '/img/36.JPG',
+    x: '/img/36X.JPG',
+    y: '/img/36Y.JPG',
+    z: '/img/36Z.JPG',
     from: 1837,
     to: 1901
   },
@@ -310,7 +329,7 @@ export default function () {
     }
 
     // don't filter if it's just numbers
-    if (search.value.replace(/[0-9]/g,'').trim().length === 0) {
+    if (search.value.replace(/[0-9]/g, '').trim().length === 0) {
       return kings.value
     }
 
@@ -323,9 +342,9 @@ export default function () {
 
   // add before and after to kings list
   if (firstTime.value) {
-    for(let i = 0; i < kings.value.length; i++) {
+    for (let i = 0; i < kings.value.length; i++) {
       kings.value[i].before = i > 0 ? kings.value[i - 1].name : null
-      kings.value[i].after = i < kings.value.length - 1 ?  kings.value[i + 1].name : null
+      kings.value[i].after = i < kings.value.length - 1 ? kings.value[i + 1].name : null
     }
     firstTime.value = false
   }
