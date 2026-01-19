@@ -2,6 +2,7 @@
   // composables
   const { $pwa } = useNuxtApp()
   const { kings, filteredKings, search } = useKingsList()
+  const showBio = ref(false)
 </script>
 <style>
   .v-card {
@@ -15,8 +16,16 @@
     <v-btn color="primary" @click="$pwa.updateServiceWorker()">Reload</v-btn>
   </v-alert>
 
-  <v-text-field clearable :label="'Search (' + filteredKings.length + ')'" v-model="search"></v-text-field>
-  <v-card v-for="king in filteredKings">
+  <v-row>
+    <v-col>
+      <v-text-field clearable :label="'Search (' + filteredKings.length + ')'" v-model="search"></v-text-field>
+    </v-col>
+    <v-col>
+      <v-switch label="Bio" v-model="showBio"></v-switch>
+    </v-col>
+  </v-row>
+
+   <v-card v-for="king in filteredKings">
     <v-img
       :src="king.img"
       class="align-end"
@@ -25,9 +34,9 @@
       <v-card-title class="text-white" v-text="king.name"></v-card-title>
     </v-img>
     <v-card-text>
-      <v-img cover v-if="king.x" :src="king.x"></v-img>
-      <v-img cover v-if="king.y" :src="king.y"></v-img>
-      <v-img cover v-if="king.z" :src="king.z"></v-img>
+      <v-img cover v-if="king.x && showBio" :src="king.x"></v-img>
+      <v-img cover v-if="king.y && showBio" :src="king.y"></v-img>
+      <v-img cover v-if="king.z && showBio" :src="king.z"></v-img>
       <v-row>
         <v-col>
           {{ king.from }} 
